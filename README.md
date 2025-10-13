@@ -1,9 +1,5 @@
 # Hi there 👋
 
-## Notebooks
+## Docker images
 
-- [PDF files in Pharo](https://github.com/massimo-nocentini/Booklet-DSst/blob/master/images/BookletDSstTest-testPdf.pdf)
-
-## Repos
-
-- https://github.com/massimo-nocentini/non-layered-tidy-trees.c
+- [![5.4.0](https://github.com/massimo-nocentini/chicken-scheme.docker/actions/workflows/docker-publish.yml/badge.svg?branch=5.4.0)](https://github.com/massimo-nocentini/chicken-scheme.docker/actions/workflows/docker-publish.yml)
