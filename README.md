@@ -9,3 +9,4 @@
 - [Wolfram Engine, cli](https://github.com/massimo-nocentini/wolframengine.docker/pkgs/container/wolframengine.docker/534004396?tag=master)
 - [Wolfram Engine, wstpserver](https://github.com/massimo-nocentini/wolframengine.docker/pkgs/container/wolframengine.docker/542596181?tag=wstpkernel)
 - [Lua 5.4.8](https://github.com/massimo-nocentini/lua.docker/pkgs/container/lua.docker/545269326?tag=5.4.8)
+- [Judy arrays 1.0.5](https://github.com/massimo-nocentini/judy.docker/pkgs/container/judy.docker/545309993?tag=1.0.5)
