@@ -47,16 +47,25 @@ Theses: [PhD](https://github.com/massimo-nocentini/PhD-thesis) ([defense slides]
   [webgraph-foreign-algorithms-rs](https://github.com/massimo-nocentini/webgraph-foreign-algorithms-rs) runs igraph and rustworkx algorithms on them
 - [avgdist-rs](https://github.com/massimo-nocentini/avgdist-rs): a sampling algorithm to estimate the average distance in graphs with a large diameter
 - [utxo2webgraph-rs](https://github.com/massimo-nocentini/utxo2webgraph-rs), [utxoscope-rs](https://github.com/massimo-nocentini/utxoscope-rs): Bitcoin UTXO graphs ([post](https://massimo-nocentini.github.io/post/payments-graph/))
+- [dag-rs](https://github.com/massimo-nocentini/dag-rs): DAG algorithms (semiring DP, dominators, reachability, transitive reduction, width) on webgraph DAGs,
+  validated on the Bitcoin Payment Graph (2.18·10⁹ nodes, 8.64·10⁹ arcs)
+- [coloring-bt-transactions-rs](https://github.com/massimo-nocentini/coloring-bt-transactions-rs): where did a Bitcoin transaction's coins come from? Colouring transactions by the blocks they descend from ([docs](https://massimo-nocentini.github.io/coloring-bt-transactions-rs/))
+- [graph-tool-rs](https://github.com/massimo-nocentini/graph-tool-rs): a work-in-progress Rust port of [graph-tool](https://graph-tool.skewed.de), moving its runtime failures to compile time
 - [non-layered-tidy-trees.c](https://github.com/massimo-nocentini/non-layered-tidy-trees.c): drawing non-layered tidy trees in linear time, also [in Rust](https://github.com/massimo-nocentini/non-layered-tidy-trees-rs)
 - [libpq-rs](https://github.com/massimo-nocentini/libpq-rs), [judy-rs](https://github.com/massimo-nocentini/judy-rs): bindings for PostgreSQL's libpq ([post](https://massimo-nocentini.github.io/post/2026-01-23-libpq-rs/)) and Judy arrays
 
 **Scheme and relational programming**
-- [aux.scm](https://github.com/massimo-nocentini/aux.scm): auxiliary definitions and macros for CHICKEN Scheme (streams, nondeterminism, [HANSEI](https://massimo-nocentini.github.io/post/2026-02-05-scm-testsuite-hanseitest/), unit testing)
+- [aux.scm](https://github.com/massimo-nocentini/aux.scm): auxiliary definitions and macros for CHICKEN Scheme (streams, nondeterminism, [HANSEI](https://massimo-nocentini.github.io/post/2026-02-05-scm-testsuite-hanseitest/), monads, unit testing),
+  now with λProlog-style higher-order logic programming in µKanren (`(aux kanren lambda)`) and ports of
+  Pie from *The Little Typer* and J-Bob from *The Little Prover*; its test suites are [on the blog](https://massimo-nocentini.github.io/categories/scheme/)
 - [concurrent.scm](https://github.com/massimo-nocentini/concurrent.scm): Concurrent ML for CHICKEN Scheme ([post](https://massimo-nocentini.github.io/post/cml/))
 - [wolfram.scm](https://github.com/massimo-nocentini/wolfram.scm): talking to the Wolfram Engine from Scheme
 - [microkanrenpy](https://github.com/massimo-nocentini/microkanrenpy), [microkanrenst](https://github.com/massimo-nocentini/microkanrenst), [kanren-light](https://github.com/massimo-nocentini/kanren-light): µKanren in Python, Smalltalk and OCaml/HOL Light
 
 **Pharo Smalltalk**
+- [pharo-vm](https://github.com/massimo-nocentini/pharo-vm/tree/pharo-12): a fork of the Pharo 12 VM with a WebAssembly port that runs stock Pharo 12–15 images
+  in node and [in the browser](https://massimo-nocentini.github.io/pharo-vm/) (console, notebook, Morphic world, Iceberg over libgit2),
+  a SimdJSONPlugin with drop-in replacements for NeoJSON's reader and writer, and faster LargeIntegers ([post](https://massimo-nocentini.github.io/post/smalltalk/))
 - [Containers-*](https://github.com/massimo-nocentini?tab=repositories&q=Containers-&language=smalltalk): persistent and classic data structures
   (skip lists, splay, leftist and binomial heaps, red-black sets, union-find, [SBRAL](https://massimo-nocentini.github.io/post/sbral/), …),
   collected in the [Booklet-DSst](https://github.com/massimo-nocentini/Booklet-DSst) booklet
@@ -72,14 +81,3 @@ Theses: [PhD](https://github.com/massimo-nocentini/PhD-thesis) ([defense slides]
 - *Dancing Links: an educational pearl*, [ESUG 2019](https://esug.github.io/2019-Conference/conf2019.html), Cologne
 - *Relational Programming in Smalltalk*, ESUG 2018, Cagliari ([slides](https://github.com/massimo-nocentini/microkanrenst/releases/download/v1.0/esug.pdf))
 - *Modular Catalan triangle*, 2nd International Symposium on Riordan Arrays and Related Topics, 2015, Lecco
-
-## Docker images
-
-- [CHICKEN Scheme 5.4.0](https://github.com/massimo-nocentini/chicken-scheme.docker/pkgs/container/chicken-scheme.docker/543605204?tag=5.4.0)
-- [CHICKEN Scheme 5.4.0, with some eggs](https://github.com/massimo-nocentini/chicken-scheme.docker/pkgs/container/chicken-scheme.docker/543611642?tag=5.4.0-eggs-included)
-- [CHICKEN Scheme 5.4.0, with some eggs and `aux.scm`](https://github.com/massimo-nocentini/aux.scm/pkgs/container/aux.scm/544342540?tag=master)
-- [CHICKEN Scheme 5.4.0, with some eggs and `aux.scm` and `wolfram.scm`](https://github.com/massimo-nocentini/wolfram.scm/pkgs/container/wolfram.scm/542817669?tag=master)
-- [Wolfram Engine, cli](https://github.com/massimo-nocentini/wolframengine.docker/pkgs/container/wolframengine.docker/534004396?tag=master)
-- [Wolfram Engine, wstpserver](https://github.com/massimo-nocentini/wolframengine.docker/pkgs/container/wolframengine.docker/542596181?tag=wstpkernel)
-- [Lua 5.4.8](https://github.com/massimo-nocentini/lua.docker/pkgs/container/lua.docker/545269326?tag=5.4.8)
-- [Judy arrays 1.0.5](https://github.com/massimo-nocentini/judy.docker/pkgs/container/judy.docker/545309993?tag=1.0.5)
