@@ -4,7 +4,7 @@ I'm a researcher and software developer from Tuscany, Italy, with a PhD in Compu
 [University of Florence](https://www.unifi.it/). I work on graph algorithms and large-scale network
 analysis, and I spend a lot of time with programming languages: Scheme, Smalltalk, Lua, Rust and C.
 
-- 🌐 Homepage and blog: **[massimo-nocentini.github.io](https://massimo-nocentini.github.io/)** ([RSS](https://massimo-nocentini.github.io/index.xml))
+- 🌐 Homepage and blog: **[massimo-nocentini.github.io](https://massimo-nocentini.github.io/)** ([RSS](https://massimo-nocentini.github.io/index.xml), [books](https://massimo-nocentini.github.io/book/)), built with my [tufte.hugo](https://github.com/massimo-nocentini/tufte.hugo) theme
 - 📄 Curriculum vitae et studiorum: [online](https://massimo-nocentini.github.io/about/), [LaTeX sources](https://github.com/massimo-nocentini/curriculum-vitae)
 - ✉️ massimo.nocentini@gmail.com · massimo.nocentini@unifi.it
 
@@ -56,16 +56,22 @@ Theses: [PhD](https://github.com/massimo-nocentini/PhD-thesis) ([defense slides]
 
 **Scheme and relational programming**
 - [aux.scm](https://github.com/massimo-nocentini/aux.scm): auxiliary definitions and macros for CHICKEN Scheme (streams, nondeterminism, [HANSEI](https://massimo-nocentini.github.io/post/2026-02-05-scm-testsuite-hanseitest/), monads, unit testing),
-  now with λProlog-style higher-order logic programming in µKanren (`(aux kanren lambda)`) and ports of
-  Pie from *The Little Typer* and J-Bob from *The Little Prover*; its test suites are [on the blog](https://massimo-nocentini.github.io/categories/scheme/)
+  now with λProlog-style higher-order logic programming in µKanren (`(aux kanren lambda)`), ports of
+  Pie from *The Little Typer* and J-Bob from *The Little Prover*, heuristic and adversarial search (`(aux search)`), and the games
+  of *Land of Lisp*, up to a playable Dice of Doom web app with a tunable AI and an SVG view of its search tree;
+  its test suites are [on the blog](https://massimo-nocentini.github.io/categories/scheme/)
+- [chicken-core](https://github.com/massimo-nocentini/chicken-core): CHICKEN Scheme compiled to WebAssembly, with a REPL console and a notebook
+  [in the browser](https://massimo-nocentini.github.io/chicken-core/)
 - [concurrent.scm](https://github.com/massimo-nocentini/concurrent.scm): Concurrent ML for CHICKEN Scheme ([post](https://massimo-nocentini.github.io/post/cml/))
 - [wolfram.scm](https://github.com/massimo-nocentini/wolfram.scm): talking to the Wolfram Engine from Scheme
 - [microkanrenpy](https://github.com/massimo-nocentini/microkanrenpy), [microkanrenst](https://github.com/massimo-nocentini/microkanrenst), [kanren-light](https://github.com/massimo-nocentini/kanren-light): µKanren in Python, Smalltalk and OCaml/HOL Light
 
 **Pharo Smalltalk**
 - [pharo-vm](https://github.com/massimo-nocentini/pharo-vm/tree/pharo-12): a fork of the Pharo 12 VM with a WebAssembly port that runs stock Pharo 12–15 images
-  in node and [in the browser](https://massimo-nocentini.github.io/pharo-vm/) (console, notebook, Morphic world, Iceberg over libgit2),
-  a SimdJSONPlugin with drop-in replacements for NeoJSON's reader and writer, and faster LargeIntegers ([post](https://massimo-nocentini.github.io/post/smalltalk/))
+  in node and [in the browser](https://massimo-nocentini.github.io/pharo-vm/) (console, notebook, Morphic world, Iceberg over libgit2
+  that commits, pushes and pulls from the page), a SimdJSONPlugin, and faster LargeIntegers ([post](https://massimo-nocentini.github.io/post/smalltalk/))
+- [simdjson.st](https://github.com/massimo-nocentini/simdjson.st): a strict RFC 8259 JSON reader and writer for Pharo 15 parsed by
+  [simdjson](https://github.com/simdjson/simdjson), with NeoJSON's API (the writer's output matches NeoJSON byte for byte)
 - [Containers-*](https://github.com/massimo-nocentini?tab=repositories&q=Containers-&language=smalltalk): persistent and classic data structures
   (skip lists, splay, leftist and binomial heaps, red-black sets, union-find, [SBRAL](https://massimo-nocentini.github.io/post/sbral/), …),
   collected in the [Booklet-DSst](https://github.com/massimo-nocentini/Booklet-DSst) booklet
@@ -75,6 +81,17 @@ Theses: [PhD](https://github.com/massimo-nocentini/PhD-thesis) ([defense slides]
 **Knuth, literate programming and Lua**
 - [sgb.cweb](https://github.com/massimo-nocentini/sgb.cweb), [bdd-zdd.cweb](https://github.com/massimo-nocentini/bdd-zdd.cweb), [SAT.cweb](https://github.com/massimo-nocentini/SAT.cweb), [simpath.cweb](https://github.com/massimo-nocentini/simpath.cweb): working through Knuth's programs ([post](https://massimo-nocentini.github.io/post/2026-01-25-sgb/))
 - [exactcover.lua](https://github.com/massimo-nocentini/exactcover.lua) (dancing links), [toposort.lua](https://github.com/massimo-nocentini/toposort.lua), and Lua bindings for [curl](https://github.com/massimo-nocentini/curl.lua), [cairo](https://github.com/massimo-nocentini/cairo.lua) and [PostgreSQL](https://github.com/massimo-nocentini/pgsql.lua)
+- [lua](https://github.com/massimo-nocentini/lua): Lua compiled to WebAssembly (wasm32 and wasm64), with a console and a notebook [in the browser](https://massimo-nocentini.github.io/lua/)
+
+**Typesetting and books**
+- [tufte.hugo](https://github.com/massimo-nocentini/tufte.hugo): a Hugo theme on [Tufte CSS](https://github.com/edwardtufte/tufte-css) that does in HTML
+  what the Tufte-LaTeX classes do in TeX: sidenotes, numbered floats with margin captions, citations, cross-references, theorems,
+  multi-chapter books with an index, print geometry, search and reveal.js slides ([example site](https://massimo-nocentini.github.io/tufte.hugo/))
+- [Books](https://massimo-nocentini.github.io/book/) typeset with it from proofread LaTeX transcriptions:
+  *La Bibbia di Gerusalemme*, X. Léon-Dufour's *Dizionario di Teologia Biblica* and the *Catechismo della Chiesa Cattolica*
+  with its Compendio, every biblical reference linked to its verse
+- [bibbia-dufour.rdf](https://github.com/massimo-nocentini/bibbia-dufour.rdf): an RDF ontology centred on the Bible verse, with SHACL shapes,
+  SPARQL queries, a time line of every dated event and an [offline explorer](https://massimo-nocentini.github.io/bibbia-dufour.rdf/)
 
 ## Talks
 
